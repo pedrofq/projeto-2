@@ -22,7 +22,6 @@ public class CaregoriaResource {
 	public ResponseEntity<?> find(@PathVariable Integer id) {
 		//Retorna um ResponseEntity: Armazena várias informações HTTP para um serviço rest. "?" pode ser qualquer tipo (pode encontrar ou não)
 		Categoria obj = service.buscar(id);
-		
 		return ResponseEntity.ok().body(obj);
 	}
 }
